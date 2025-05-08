@@ -9,6 +9,7 @@
 <body>
   <header class="main-header">
     <div class="logo">Nike</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <nav class="main-nav">
       <ul>
         <li><a href="hombre.html">HOMBRE</a></li>
@@ -33,16 +34,13 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
   ">
     <div class="hero-content">
       <h1>Encuentra tu estilo</h1>
       <p>Encuentra lo mejor en ropa deportiva</p>
-      
     </div>
   </section>
 
- 
   <section class="mid-section">
     <div class="mid-content">
       <h2>Innovación y estilo </h2>
@@ -74,6 +72,15 @@
   <footer class="main-footer">
     <p>&copy; 2025 Nike. Todos los derechos reservados.</p>
   </footer>
+
+  
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.main-nav');
+      nav.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
+
 
