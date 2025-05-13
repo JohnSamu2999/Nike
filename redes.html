@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redes Sociales - Nike</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="m">
+    <div class="logo">Nike</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="hombre.html">HOMBRE</a></li>
+        <li><a href="mujer.html">MUJER</a></li>
+        <li><a href="nino.html">NIÑO</a></li>
+        <li><a href="ofertas.html">OFERTAS</a></li>
+      </ul>
+    </nav>
+    <div class="user-actions">
+      <a href="inicio.html">Iniciar sesión</a>
+      <a href="consulta.html">Contactanos</a>
+      <a href="redes.html">Redes Sociales</a>
+    </div>
+  </header>
+
+  <section class="social-section">
+    <h2>Síguenos en nuestras redes sociales</h2>
+    <ul>
+      <li><a href="https://www.facebook.com/nike" target="_blank">Facebook</a></li>
+      <li><a href="https://www.instagram.com/nike" target="_blank">Instagram</a></li>
+      <li><a href="https://www.twitter.com/nike" target="_blank">Twitter</a></li>
+      <li><a href="https://www.youtube.com/user/nike" target="_blank">YouTube</a></li>
+      <li><a href="https://www.tiktok.com/@nike" target="_blank">TikTok</a></li>
+    </ul>
+  </section>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Nike. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.main-nav');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
