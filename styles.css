@@ -11,7 +11,7 @@ body {
   line-height: 1.6;
 }
 
-/* HEADER */
+
 .m {
   display: flex;
   justify-content: space-between;
@@ -29,7 +29,7 @@ body {
   font-size: 1.8rem;
 }
 
-/* Botón de menú hamburguesa */
+
 .menu-toggle {
   display: none;
   font-size: 1.5rem;
@@ -61,7 +61,7 @@ body {
   margin-left: 1.5rem;
 }
 
-/* HERO */
+
 .hero {
   height: 90vh;
   display: flex;
@@ -86,7 +86,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* SECCIÓN INTERMEDIA */
+
 .mid-section {
   background-color: #f4f4f4;
   padding: 4rem 2rem;
@@ -105,7 +105,7 @@ body {
   margin: 0 auto;
 }
 
-/* PRODUCTOS DESTACADOS */
+
 .featured-products {
   padding: 3rem 2rem;
   text-align: center;
@@ -155,7 +155,7 @@ body {
   font-weight: 600;
 }
 
-/* FOOTER */
+
 .main-footer {
   background-color: #f1f1f1;
   padding: 1rem;
@@ -164,7 +164,7 @@ body {
   color: #555;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
   .main-header {
     flex-direction: column;
@@ -199,7 +199,7 @@ body {
     align-items: center;
   }
 
-/* SECCIÓN REDES SOCIALES */
+
 .social-section {
   padding: 4rem 2rem;
   text-align: center;
@@ -232,7 +232,7 @@ body {
   color: #0071e3; /* azul Nike */
 }
 
-/* SECCIÓN DE CONTACTO */
+
 .contact-section {
   padding: 4rem 2rem;
   text-align: center;
