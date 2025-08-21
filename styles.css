@@ -7,7 +7,7 @@
 body {
   font-family: 'Helvetica Neue', sans-serif;
   color: #111;
-  background-color: #fff;
+  background-color: #f6e9cc;
   line-height: 1.6;
 }
 
@@ -17,8 +17,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 3rem;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  background-color: #fbf6d6;
+  border-bottom: 1px solid #e3daa4;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -73,7 +73,7 @@ body {
 
 .hero-title,
 .hero-subtitle {
-  color: white;
+  color: rgb(245, 236, 213);
 }
 
 .hero-title {
@@ -88,7 +88,7 @@ body {
 
 
 .mid-section {
-  background-color: #f4f4f4;
+  background-color: #f6e5c7;
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -282,3 +282,4 @@ body {
 }
 
 }
+
