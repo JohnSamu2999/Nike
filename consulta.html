@@ -3,12 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto - Nike</title>
+  <title>Misión y Visión | Tienda de Ropa</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    .mision-vision-section {
+      padding: 50px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #f5f5f5, #eaeaea);
+    }
+
+    .mision-vision-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #111;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <header class="m">
-    <div class="logo"><a href="index.html">Nike</a></div>
+     <div class="logo"><a href="index.html">Nike</a></div>
     
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     
@@ -18,38 +79,38 @@
         <li><a href="mujer.html">MUJER</a></li>
         <li><a href="nino.html">NIÑO</a></li>
         <li><a href="ofertas.html">OFERTAS</a></li>
-         <li><a href="inicio.html">Iniciar sesión</a></li>
-        <li><a href="consulta.html">Contactanos</a></li>
+        <li><a href="inicio.html">Iniciar sesión</a></li>
+        <li><a href="consulta.html">Contáctanos</a></li>
         <li><a href="redes.html">Redes Sociales</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="contact-section">
-    <h2>Contáctanos</h2>
-    <form action="https://formspree.io/f/xyz12345" method="POST">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required />
-
-      <label for="correo">Correo electrónico:</label>
-      <input type="email" id="correo" name="correo" required />
-
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
+  <section class="mision-vision-section">
+    <h2>Nuestra Esencia</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Misión</h3>
+        <p>
+          Brindar a nuestros clientes prendas de vestir modernas, cómodas y accesibles, 
+          inspirando confianza y estilo en cada ocasión. Buscamos crear una experiencia de compra 
+          única, combinando calidad, tendencia y atención personalizada.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Visión</h3>
+        <p>
+          Ser reconocidos como la tienda de ropa preferida a nivel nacional, 
+          destacándonos por la innovación en nuestros diseños, el compromiso con la sostenibilidad 
+          y la pasión por vestir a cada persona según su auténtico estilo de vida.
+        </p>
+      </div>
+    </div>
   </section>
 
   <footer class="main-footer">
-    <p>&copy; 2025 Nike. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Tienda de Ropa. Todos los derechos reservados.</p>
   </footer>
-
-  <script>
-    function toggleMenu() {
-      const nav = document.querySelector('.main-nav');
-      nav.classList.toggle('active');
-    }
-  </script>
 </body>
 </html>
+
