@@ -9,7 +9,7 @@
     .login-form {
       display: flex;
       flex-direction: column;
-      gap: 20px; /* 👈 separa cada parámetro con espacio */
+      gap: 20px; 
     }
 
     label {
@@ -75,7 +75,7 @@
 
   <section class="login-section">
     <h2>Formulario de Registro</h2>
-    <form action="https://formspree.io/f/mzzvlwoy" method="POST" class="login-form">
+    <form action="https://formspree.io/f/tu-endpoint" method="POST" class="login-form">
       
       <div>
         <label for="nombre">Nombre:</label>
@@ -92,17 +92,16 @@
         <input type="text" id="direccion" name="direccion" />
       </div>
 
-      <div>
-        <label>Sexo:</label><br>
-        <input type="radio" id="masculino" name="sexo" value="Masculino" />
-        <label for="masculino">Masculino</label>
+      <!-- Campo de sexo como estaba originalmente -->
+      <label>Sexo:</label>
+      <input type="radio" id="masculino" name="sexo" value="Masculino" />
+      <label for="masculino">Masculino</label>
 
-        <input type="radio" id="femenino" name="sexo" value="Femenino" />
-        <label for="femenino">Femenino</label>
+      <input type="radio" id="femenino" name="sexo" value="Femenino" />
+      <label for="femenino">Femenino</label>
 
-        <input type="radio" id="otros" name="sexo" value="Otros" />
-        <label for="otros">Otros</label>
-      </div>
+      <input type="radio" id="otros" name="sexo" value="Otros" />
+      <label for="otros">Otros</label>
 
       <div>
         <label>Edad / Descuentos:</label>
@@ -145,5 +144,3 @@
   </footer>
 </body>
 </html>
-
-
