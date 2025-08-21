@@ -10,10 +10,11 @@
   <header class="m">
     <div class="logo">Punrocker</div>
     
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+     <button id="abrir" class="abrir-menu">☰</button>
     
-    <nav class="main-nav">
-      <ul>
+    <nav class="nav" id="nav">
+      <button class="cerrar-menu" id="cerrar">☰</button>
+      <ul class="nav-list">
         <li><a href="hombre.html">Hombe</a></li>
         <li><a href="mujer.html">Mujer</a></li>
         <li><a href="nino.html">Niño</a></li>
@@ -77,12 +78,7 @@
   </footer>
 
 
-  <script>
-    function toggleMenu() {
-      const nav = document.querySelector('.main-nav');
-      nav.classList.toggle('active');
-    }
-  </script>
+ <script src="main.js"></script>
 </body>
 </html>
 
