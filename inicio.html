@@ -9,7 +9,7 @@
     .login-form {
       display: flex;
       flex-direction: column;
-      gap: 20px; 
+      gap: 20px; /* separa cada parámetro */
     }
 
     label {
@@ -22,6 +22,13 @@
       border: 1px solid #ccc;
       border-radius: 5px;
       width: 100%;
+    }
+
+    /* ⚡ Para que los radios de sexo queden en una sola línea */
+    .sexo-options label {
+      display: inline-block;
+      margin-right: 15px;
+      font-weight: normal;
     }
 
     table {
@@ -92,17 +99,17 @@
         <input type="text" id="direccion" name="direccion" />
       </div>
 
-       <label>Sexo:</label>
-      <div class="radio-group">
-        <input type="radio" id="masculino" name="sexo" value="Masculino" />
-        <label for="masculino">Masculino</label>
+      <!-- ✅ Campo de sexo corregido -->
+      <div>
+        <label>Sexo:</label>
+        <div class="sexo-options">
+          <label><input type="radio" name="sexo" value="Masculino"> Masculino</label>
+          <label><input type="radio" name="sexo" value="Femenino"> Femenino</label>
+          <label><input type="radio" name="sexo" value="Otros"> Otros</label>
+        </div>
+      </div>
 
-        <input type="radio" id="femenino" name="sexo" value="Femenino" />
-        <label for="femenino">Femenino</label>
-
-        <input type="radio" id="otros" name="sexo" value="Otros" />
-        <label for="otros">Otros</label>
-      </div
+      <div>
         <label>Edad / Descuentos:</label>
         <table class="radio-table">
           <tr>
