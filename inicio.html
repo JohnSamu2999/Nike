@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Iniciar Sesión | Nike</title>
+  <title>Registro | Nike</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -18,23 +18,63 @@
         <li><a href="mujer.html">MUJER</a></li>
         <li><a href="nino.html">NIÑO</a></li>
         <li><a href="ofertas.html">OFERTAS</a></li>
-         <li><a href="inicio.html">Iniciar sesión</a></li>
-        <li><a href="consulta.html">Contactanos</a></li>
+        <li><a href="inicio.html">Iniciar sesión</a></li>
+        <li><a href="consulta.html">Contáctanos</a></li>
         <li><a href="redes.html">Redes Sociales</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="login-section">
-    <h2>Iniciar Sesión</h2>
-    <form action="#" method="post" class="login-form">
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required />
+    <h2>Formulario de Registro</h2>
+    <form action="https://formspree.io/f/mzzvlwoy" method="POST" class="login-form">
+      
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
 
-      <label for="password">Contraseña:</label>
-      <input type="password" id="password" name="password" required />
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required />
 
-      <button type="submit">Entrar</button>
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" />
+
+      <label>Sexo:</label>
+      <div class="radio-group">
+        <input type="radio" id="masculino" name="sexo" value="Masculino" />
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" id="femenino" name="sexo" value="Femenino" />
+        <label for="femenino">Femenino</label>
+
+        <input type="radio" id="otros" name="sexo" value="Otros" />
+        <label for="otros">Otros</label>
+      </div>
+
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" min="0" />
+
+      <label>Descuentos:</label>
+      <div class="checkbox-group">
+        <input type="checkbox" id="d1" name="descuento" value="<18 Descuento 10" />
+        <label for="d1">&lt; 18 Descuento 10</label><br>
+
+        <input type="checkbox" id="d2" name="descuento" value="=18 Descuento 9" />
+        <label for="d2">= 18 Descuento 9</label><br>
+
+        <input type="checkbox" id="d3" name="descuento" value="<40 Descuento 10" />
+        <label for="d3">&lt; 40 Descuento 10</label><br>
+
+        <input type="checkbox" id="d4" name="descuento" value=">50 Descuento 25" />
+        <label for="d4">&gt; 50 Descuento 25</label>
+      </div>
+
+      <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" />
+
+      <label for="otros">Otros:</label>
+      <textarea id="otros" name="otros" rows="3"></textarea>
+
+      <button type="submit">Enviar</button>
     </form>
   </section>
 
