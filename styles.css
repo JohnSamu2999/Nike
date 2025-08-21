@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 body {
   font-family: 'Helvetica Neue', sans-serif;
@@ -416,6 +412,6 @@ header {
     padding: 2rem;
     background-color: #ececec;
 }
-}
+
 }
 
